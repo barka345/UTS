@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iPad App for the Artists</title>
+	<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<style>
+		.full-width-image { width: 100%; height: 500px; object-fit: cover; }
+		.project-title { position: absolute; top: 50%; left: 50%; font-size: 50pt; transform: translate(-50%, -50%); color: white; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+		.image-container { position: relative; }
+		.project-slider { position: relative; width: 100%; overflow: hidden; }
+		.slider-container { display: flex; transition: transform 0.5s ease; width: 300%; }
+		.slider-slide { width: 33.33%; flex-shrink: 0; }
+		.slider-slide img { width: 100%; height: 500px; object-fit: cover; }
+		.slider-controls { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; }
+		.slider-dot { width: 10px; height: 10px; background-color: rgba(255,255,255,0.5); border-radius: 50%; cursor: pointer; transition: background-color 0.3s; }
+		.slider-dot.active { background-color: white; }
+		.slider-toggle { display: none; }
+		#slide1:checked ~ .slider-container { transform: translateX(0); }
+		#slide2:checked ~ .slider-container { transform: translateX(-33.33%); }
+		#slide3:checked ~ .slider-container { transform: translateX(-66.66%); }
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html#contact">contact</a></li>
+			<li>works</li>
+			<li>expertience</li>
+			<li class="empty"></li>
+			<li><a href="profil.html">profil</a></li>
+			<li><a href="https://x.com/anzanul" target="_blank">twitter</a></li>
+			<li>linkedin</li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="https://images.pexels.com/photos/4348408/pexels-photo-4348408.jpeg?auto=compress&cs=tinysrgb&w=1600" class="full-width-image" alt="iPad App for Artists Project">
+			<h1 class="project-title">iPad App<br>for the Artists</h1>
+		</div>
+		<div class="breadcrumb">
+			<a href="index.html">Home</a> / iPad App for the Artists
+		</div>
+		<section class="project" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Overview</h2>
+						<p>Proyek ini berfokus pada pengembangan aplikasi iPad untuk seniman digital yang membutuhkan ruang kerja kreatif, ringan, dan mudah digunakan. Tujuan utama aplikasi adalah membantu seniman membuat sketsa, mengatur referensi visual, dan menyusun proses kreatif dalam satu platform yang praktis.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Research & Discovery</h2>
+						<p>Proses riset dilakukan untuk memahami kebutuhan seniman dalam bekerja secara digital, meliputi:</p>
+						<ul>
+							<li>Wawancara dengan ilustrator, desainer karakter, dan seniman konsep</li>
+							<li>Observasi alur kerja saat membuat sketsa, pewarnaan, dan revisi karya</li>
+							<li>Analisis aplikasi kreatif populer untuk menemukan peluang penyederhanaan fitur</li>
+							<li>Pengujian awal untuk memahami kebiasaan pengguna iPad dan stylus</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Interface Design Strategy</h2>
+						<p>Strategi desain antarmuka dibuat agar pengalaman menggambar terasa fokus dan tidak mengganggu proses kreatif. Fokus utama desain meliputi:</p>
+						<ul>
+							<li>Toolbar sederhana yang mudah dijangkau saat menggunakan stylus</li>
+							<li>Mode kanvas penuh untuk memberi ruang visual yang luas</li>
+							<li>Sistem layer dan palet warna yang jelas namun tetap ringkas</li>
+							<li>Pengaturan proyek untuk menyimpan referensi, draft, dan hasil akhir</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Key Outcomes</h2>
+						<p>Hasil utama dari pengembangan konsep aplikasi ini adalah:</p>
+						<ul>
+							<li>Alur membuat sketsa menjadi lebih cepat dan terorganisir</li>
+							<li>Pengguna lebih mudah berpindah antara referensi, layer, dan kanvas</li>
+							<li>Tampilan aplikasi terasa bersih sehingga seniman dapat fokus pada karya</li>
+							<li>Prototype mendapatkan respons positif dari pengguna kreatif saat pengujian</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="https://images.pexels.com/photos/4348408/pexels-photo-4348408.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="iPad App Main Canvas">
+								</div>
+								<div class="slider-slide">
+									<img src="https://images.pexels.com/photos/4792728/pexels-photo-4792728.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="iPad App Drawing Tools">
+								</div>
+								<div class="slider-slide">
+									<img src="https://images.pexels.com/photos/5082577/pexels-photo-5082577.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="iPad App Project Library">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			learning more?<br><a href="/cdn-cgi/l/email-protection" class="__cf_email__">[email&#160;protected]</a></h2>
+			<p>designed & developed by Andi Zikra 2024</p>
+		</footer>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+	</html>
